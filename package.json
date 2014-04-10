@@ -1,0 +1,25 @@
+{
+  "name": "JamesKohli.com",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*"
+  },
+  "description": "Home ====",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesKohli/Home.git"
+  },
+  "author": "James Kohli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesKohli/Home/issues"
+  },
+  "homepage": "https://github.com/JamesKohli/Home"
+}
