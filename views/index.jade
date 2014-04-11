@@ -2,6 +2,19 @@ extends layout
 
 block content
 	div.container
-		div.header
-			h1(style="padding-top:25px")= title
-			p Welcome to #{title}
+		div
+			img(src='images/signature.gif')
+			h1 James Kohli
+			p Partner and Software Engineer at 
+				a(href='http://www.g2ft.com') G2 FinTech
+		hr.large
+		ul.menu
+			li 
+				a(href="http://www.twitter.com/JamesKohli", title='twitter.com/JamesKohli') Twitter
+			li Facebook
+			li Linkedin
+		hr.large
+		div(style='text-align:center')
+			a(href='http://www.github.com/JamesKohli' title='GitHub')
+				img(src='images/science.gif')
+			img(src='images/art.gif')
