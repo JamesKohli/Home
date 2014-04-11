@@ -9,3 +9,23 @@ div
 {
 text-align: center;
 }
+
+.caption{
+text-decoration: none;
+}
+
+.main {
+margin-top: 10px;
+padding-bottom: 2em;
+-webkit-box-shadow: 0 0 130px black;
+-moz-box-shadow: 0 0 130px black;
+box-shadow: 0 0 130px black;
+background: white;
+margin: 0 auto;
+position: relative;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+}
