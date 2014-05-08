@@ -6,23 +6,34 @@ block content
 			img(src='images/signature.gif')
 			h1 James Kohli
 			h4 Partner and Software Engineer at 
-				a(href='http://www.g2ft.com') G2 FinTech
+				a.boldLink(href='http://www.g2ft.com') G2 FinTech
 			hr.large
 			ul.menu
 				li 
-					a(href="http://www.twitter.com/JamesKohli" title='twitter.com/JamesKohli' target='_blank') Twitter
+					a.boldLink(href="http://www.twitter.com/JamesKohli" title='twitter.com/JamesKohli' target='_blank') Twitter
 				li 
-					a(href="http://www.facebook.com/gettinjiggywithit" title='Facebook' target='_blank') Facebook
+					a(href="http://www.facebook.com/gettinjiggywithit" title='Facebook' target='_blank').boldLink Facebook
 				li 
-					a(href="https://www.linkedin.com/pub/james-kohli/42/48b/267" title="Linkedin" target='_blank') Linkedin
+					a.boldLink(href="https://www.linkedin.com/pub/james-kohli/42/48b/267" title="Linkedin" target='_blank') Linkedin
 				li 
-					a(href="mailto:jkohli112@gmail.com" title="Email" target='_blank') Jkohli112@gmail.com
+					a(href="mailto:jkohli112@gmail.com" title="Email" target='_blank').boldLink Jkohli112@gmail.com
 			hr.large
+			h3 Blog Entries
+			p
+				script(type="text/javascript"). 
+					for (var i = 0; i < 5; i++) { 
+					document.write(
+					'<h6><p><a class="boldLink" href="' + tumblr_api_read['posts'][i]['url'] + 
+					'">' + tumblr_api_read['posts'][i]['regular-title'] + '</a><br>'+ tumblr_api_read['posts'][i]['date']+'</br></p><h6>'
+					);
+					}
+				hr.large
 			div.eight.columns.alpha
-				a(href='http://www.github.com/JamesKohli' title='GitHub' target='_blank')
+				a.boldLink(href='http://www.github.com/JamesKohli' title='GitHub' target='_blank')
 					img(src='images/science.gif')
 					h4.caption Science & Engineering
 			div.eight.columns.omega
-				a(href='http://www.jameskohli.tumblr.com' title='Tumblr' target='_blank')
+				a.boldLink(href='http://www.jameskohli.tumblr.com' title='Tumblr' target='_blank')
 					img(src='images/art.gif')
-					h4.caption Art & Philosophy
+					h4 Art & Philosophy
+			

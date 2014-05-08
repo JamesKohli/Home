@@ -29,3 +29,8 @@ position: relative;
 -o-border-radius: 3px;
 border-radius: 3px;
 }
+
+.boldLink  {
+    text-decoration: none;
+	color: #C16757
+}
