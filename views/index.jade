@@ -23,9 +23,14 @@ block content
 			p
 				script(type="text/javascript"). 
 					for (var i = 0; i < 5; i++) { 
+						if(typeof tumblr_api_read['posts'][i]['regular-title'] === 'undefined'){
+							var linkTitle = tumblr_api_read['posts'][i]['link-text'];
+						} else {
+							var linkTitle = tumblr_api_read['posts'][i]['regular-title'];
+						};
 					document.write(
 					'<h6><p><a class="boldLink" target="_blank" href="' + tumblr_api_read['posts'][i]['url'] + 
-					'">' + tumblr_api_read['posts'][i]['regular-title'] + '</a><br>'+ tumblr_api_read['posts'][i]['date']+'</br></p><h6>'
+					'">' + linkTitle + '</a><br>'+ tumblr_api_read['posts'][i]['date']+'</br></p><h6>'
 					);
 					}
 				a.boldLink(href="http://jameskohli.tumblr.com/tagged/blog" title="Blog") More Entries
